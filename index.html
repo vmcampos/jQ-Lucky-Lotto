@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, user-scalable=no">
+  <title>VmC Lucky Lotto</title>
+  <link rel="stylesheet" href="jquery.mobile-1.3.2.min.css">
+  <link rel="stylesheet" href="ext.css">
+</head>
+<body>
+<div data-role="page" id="home">
+    <div data-theme="a" data-role="header">
+        <h1>
+            VmC Lucky Lotto
+        </h1>
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#" data-transition="slide" data-theme="" data-icon="home" class="ui-btn-active ui-state-persist">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" data-transition="flip" data-theme="" data-icon="alert">
+                        About
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="content">
+		<h2>Lucky Lotto Numbers</h2>
+		<p>
+			How many do you want? 
+			<input type="number" id="numLottoHowManyInput" value=""> <br>
+			What's the maximum?
+			<input type="number" id="numLottoMaxInput" value="">
+			<input type="button" id="numLottoGoBtn" value="Go" onclick="numLottoPick();">
+			<input type="button" id="resetBtn" value="Reset" onclick="resetLotto();">
+		</p>
+		<h3 id="numLottoMsg" style="display: none;">Your lucky numbers are: </h3>
+		<p id="numLottoResult"></p>
+    </div>
+</div>
+
+<div data-role="page" id="about" data-add-back-btn="true">
+    <div data-theme="a" data-role="header">
+        <h1>
+            VmC Lotto Numbers
+        </h1>
+    </div>
+    <div data-role="content">
+        <p>About</p>
+    </div>
+</div>
+<script src="jquery-2.0.3.min.js"></script>
+<script src="jquery.mobile-1.3.2.min.js"></script>
+<script src="ext.js"></script>
+</body>
+</html>
