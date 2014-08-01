@@ -3,8 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, user-scalable=no">
-  <title>VmC Lucky Lotto</title>
-  <link rel="stylesheet" href="jquery.mobile-1.3.2.min.css">
+  <title>jQ Lucky Lotto</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css">
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+  <script src="ext.js"></script>
   <link rel="stylesheet" href="ext.css">
   <!-- vmcampos@vmcampos.com -->
 </head>
@@ -12,7 +15,7 @@
 <div data-role="page" id="home">
     <div data-theme="a" data-role="header">
         <h1>
-            VmC Lucky Lotto
+            jQ Lucky Lotto
         </h1>
         <div data-role="navbar" data-iconpos="top">
             <ul>
@@ -44,18 +47,18 @@
     </div>
 </div>
 
-<div data-role="page" id="about" data-add-back-btn="true">
-    <div data-theme="a" data-role="header">
+<div data-role="page" id="about">
+    <div data-theme="a" data-role="header" data-add-back-btn="true">
         <h1>
-            VmC Lotto Numbers
+            jQ Lotto Numbers
         </h1>
     </div>
     <div data-role="content">
-        <p>About</p>
+        <h2>jQ-Lucky-Lotto</h2>
+		<p>Simple Lotto Number Generator</p>
+		<p>An HTML5-based project. Uses plain old JavaScript. Interface is designed with jQuery Mobile.</p>
+		<p>Work in progress: Upgrade to jQM 1.4.3 and jQ 1.11</p>
     </div>
 </div>
-<script src="jquery-2.0.3.min.js"></script>
-<script src="jquery.mobile-1.3.2.min.js"></script>
-<script src="ext.js"></script>
 </body>
 </html>
