@@ -1,64 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+<!-- 
+	Name: vmcampos <vmcampos@vmcampos.com>
+	Project: VmC jQ Lucky Lotto
+	Version: 2015.07.04
+-->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, user-scalable=no">
   <title>jQ Lucky Lotto</title>
-  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   <script src="ext.js"></script>
   <link rel="stylesheet" href="ext.css">
-  <!-- vmcampos@vmcampos.com -->
 </head>
 <body>
-<div data-role="page" id="home">
-    <div data-theme="a" data-role="header">
-        <h1>
-            jQ Lucky Lotto
-        </h1>
-        <div data-role="navbar" data-iconpos="top">
+<section data-role="page" id="home" data-title="Home">
+    <header data-role="header">
+        <h1>VmC jQ Lucky Lotto</h1>
+        <nav data-role="navbar">
             <ul>
                 <li>
-                    <a href="#" data-transition="slide" data-theme="" data-icon="home" class="ui-btn-active ui-state-persist">
+                    <a href="#" data-icon="home" class="ui-btn-active ui-state-persist">
                         Home
                     </a>
                 </li>
                 <li>
-                    <a href="#about" data-transition="flip" data-theme="" data-icon="alert">
+                    <a href="#about" data-transition="flip" data-icon="eye">
                         About
                     </a>
                 </li>
             </ul>
-        </div>
-    </div>
-    <div data-role="content">
+        </nav>
+    </header>
+    <article role="main" class="ui-content">
 		<h2>Lucky Lotto Numbers</h2>
 		<p>
 			How many do you want? 
 			<input type="number" id="numLottoHowManyInput" value=""> <br>
 			What's the maximum?
 			<input type="number" id="numLottoMaxInput" value="">
-			<input type="button" id="numLottoGoBtn" value="Go" onclick="numLottoPick();">
-			<input type="button" id="resetBtn" value="Reset" onclick="resetLotto();">
+			<div class="ui-grid-a  divCenter divBotSpace">
+				<div class="ui-block-a">
+					<input type="button" id="numLottoGoBtn" data-icon="check" data-inline="true" value="Go" onclick="numLottoPick();">
+				</div>
+				<div class="ui-block-b">
+					<input type="button" id="resetBtn" data-icon="delete" data-inline="true" value="Reset" onclick="resetLotto();">
+				</div>
+			</div>
 		</p>
-		<h3 id="numLottoMsg" style="display: none;">Your lucky numbers are: </h3>
-		<p id="numLottoResult"></p>
-    </div>
-</div>
+		<h3 class="ui-bar ui-bar-a" id="numLottoMsg" style="display: none;"></h3>
+		<p class="ui-body ui-body-a ui-corner-all" id="numLottoResult" style="display: none;"></p>
+    </article>
+</section>
 
-<div data-role="page" id="about">
-    <div data-theme="a" data-role="header" data-add-back-btn="true">
-        <h1>
-            jQ Lotto Numbers
-        </h1>
+<section data-role="page" id="about" data-title="About">
+    <div  data-role="header" data-add-back-btn="true">
+        <h1>About</h1>
     </div>
-    <div data-role="content">
+    <article role="main" class="ui-content">
         <h2>jQ-Lucky-Lotto</h2>
 		<p>Simple Lotto Number Generator</p>
 		<p>An HTML5-based project. Uses plain old JavaScript. Interface is designed with jQuery Mobile.</p>
-		<p>Work in progress: Upgrade to jQM 1.4.3 and jQ 1.11</p>
-    </div>
-</div>
+    </article>
+</section>
 </body>
 </html>

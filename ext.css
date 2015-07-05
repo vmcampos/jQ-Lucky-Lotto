@@ -1,5 +1,18 @@
-/*  jQ Lucky Lotto Styling */
+/* 
+	Name: vmcampos <vmcampos@vmcampos.com>
+	Project: VmC jQ Lucky Lotto
+	Version: 2015.07.04
+*/
 
 .ui-header .ui-title {
 	margin: .6em 10% .8em;
+}
+
+.divCenter {
+	text-align: center;
+}
+
+.divBotSpace {
+	/* margin-top: 1em; */
+	margin-bottom: 1em;
 }
